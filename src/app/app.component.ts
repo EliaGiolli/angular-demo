@@ -12,26 +12,14 @@ import { UserProps, UserRole } from './user-card/user-card.types';
 export class AppComponent {
   title = 'angular-demo';
   
-  currentUser: UserProps = {
+  currentUser:UserProps = {
     userName: 'Lucia Bianchi',
     role: UserRole.Admin,
-    imgUrl: 'assets/img/persona2.jpg'
-  };
-
-  private userA: UserProps = {
-    userName: 'Lucia Bianchi',
-    role: UserRole.Admin,
-    imgUrl: 'assets/img/persona2.jpg'
-  };
-
-  private userB: UserProps = {
-    userName: 'Mario Rossi',
-    role: UserRole.User,
-    imgUrl: 'assets/img/persona1.jpg'
-  };
-
-  handleUpdateUser() {
-    this.currentUser =
-      this.currentUser.userName === this.userA.userName ? this.userB : this.userA;
+    imgUrl: 'assets/img/persona2.jpg' 
+  }
+  handleUpdateUser(){
+    this.currentUser.userName = 'Mario Rossi',
+    this.currentUser.role = UserRole.User,
+    this.currentUser.imgUrl = 'assets/img/persona1.jpg'
   }
 }
