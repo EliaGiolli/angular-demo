@@ -1,6 +1,6 @@
 //since in my angular.json file I configured  "includePaths": ["src/styles"]
 //here I can import just what I really need
-@import 'variables';
+@use 'variables' as *;
 
 
 main {
