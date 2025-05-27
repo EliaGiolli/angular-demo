@@ -1,0 +1,14 @@
+//since in my angular.json file I configured  "includePaths": ["src/styles"]
+//here I can import just what I really need
+@import 'variables';
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, $color-primary 0%, $color-secondary 50%, $color-light 100%);
+}
