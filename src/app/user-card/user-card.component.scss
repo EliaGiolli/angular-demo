@@ -8,11 +8,11 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  width: 100%;
+  min-width: 350px;
   min-height: 500px;
   border-radius: 11px;
   padding: 2rem;
-
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 
